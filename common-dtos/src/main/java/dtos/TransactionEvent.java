@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class TransactionEvent {
     private String transactionId;
     private String accountId;
-    private Long amount;
-    private long timestamp;
+    private Double amount;
+    private Long timestamp;
     private String ipAddress;
 }

@@ -6,5 +6,5 @@ import lombok.Data;
 public class TransactionRequest {
     private String transactionId;
     private String accountId;
-    private Long amount;
+    private Double amount;
 }

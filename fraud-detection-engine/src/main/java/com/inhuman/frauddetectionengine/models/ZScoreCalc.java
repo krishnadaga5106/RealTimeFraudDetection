@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class TransactionProfile {
-    private double mean;
-    private double variance;
+public class ZScoreCalc {
+    Double zScore;
+    Double mean;
+    Double variance;
 }

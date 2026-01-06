@@ -27,7 +27,7 @@ public class VelocityRule implements FraudRule {
     public int evaluate(TransactionEvent e) {
         int trans = velocityRepo.getTransactions(e);
         log.info("Transactions: {}", trans);
-        if(velocityRepo.getTransactions(e) > transactionLimit)
+        if(trans > transactionLimit)
             return velocityScore;
         return 0;
     }
